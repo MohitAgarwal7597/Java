@@ -5,7 +5,6 @@ public class CountVowelsConsonantsSpecialCharacters {
         String str = "sun rises from east & earth revolves around sun:";
         str = str.toUpperCase();
         str = str.replaceAll(" ", "");
-        System.out.println(str);
         int totalChar = 0;
         int vowels = 0;
         int consononts = 0;
