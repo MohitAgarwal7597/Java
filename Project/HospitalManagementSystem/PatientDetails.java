@@ -12,7 +12,7 @@ class PatientDetails {
     public void setPatientDetails() {
         for (;;) {
             System.out.println("------------------------------------------------------------");
-            System.out.println("Enter Name: ");
+            System.out.print("Enter Name:\t|\t");
             name = sc.nextLine();
             System.out.println("------------------------------------------------------------");
             try {
@@ -28,7 +28,7 @@ class PatientDetails {
 
         }
         for (;;) {
-            System.out.println("Enter Age: ");
+            System.out.print("Enter Age:\t|\t");
             age = sc.next();
             System.out.println("------------------------------------------------------------");
             try {
@@ -41,7 +41,7 @@ class PatientDetails {
             }
         }
 
-        System.out.println("Enter Your Gender\"Male/Female/Other\"");
+        System.out.print("Enter Your Gender\"Male/Female/Other\":\t|\t");
         sc.nextLine();
         gender = sc.next();
         System.out.println("------------------------------------------------------------");
@@ -57,7 +57,7 @@ class PatientDetails {
                 gender = sc.nextLine();
             }
         }
-        System.out.print("Enter Mobile Number: +91 ");
+        System.out.print("Enter Mobile Number:\t|\t+91 ");
         for (;;) {
             mobileNumber = sc.next();
             System.out.println("------------------------------------------------------------");

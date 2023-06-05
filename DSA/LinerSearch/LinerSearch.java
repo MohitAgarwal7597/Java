@@ -1,4 +1,4 @@
-package LinerSearch;
+package DSA.LinerSearch.LinerSearch;
 
 import java.util.Scanner;
 

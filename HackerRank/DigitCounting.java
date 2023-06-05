@@ -1,5 +1,5 @@
 package HackerRank;
-
+//count digits in given input
 import java.util.Scanner;
 
 public class DigitCounting {
@@ -8,6 +8,7 @@ public class DigitCounting {
         System.out.println("Enter Number: ");
         Scanner sc = new Scanner(System.in);
         i = sc.nextInt();
+        sc.close();
         for (int j = 1; j >= 1; j++) {
             q = i / 10;
             i = q;

@@ -1,4 +1,4 @@
-package LinerSearch;
+package DSA.LinerSearch;
 
 public class FindLargestElement {
     public static void main(String[] args) {

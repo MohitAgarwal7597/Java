@@ -1,4 +1,7 @@
+//find given target in array. If target dosent exists written -1 -1;
 package DSA.BinarySearch;
+
+import java.util.Arrays;
 
 public class ChallangeToShubham {
     public static void main(String[] rdx) {
@@ -6,8 +9,8 @@ public class ChallangeToShubham {
                 { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }
         };
 
-        int target = 9;
-        multiDimensionalArray(arr, target);
+        int target = 11;
+        System.out.println(Arrays.toString(multiDimensionalArray(arr, target)));
 
     }
 

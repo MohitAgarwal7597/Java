@@ -1,4 +1,4 @@
-package Sorting.BubbleSort;
+package DSA.Sorting.BubbleSort;
 
 import java.util.Scanner;
 

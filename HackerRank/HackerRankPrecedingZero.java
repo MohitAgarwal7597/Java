@@ -1,24 +1,26 @@
+//HakerRank Problem: Show Preceding 0 if integer is less than 3 digits.....
 package HackerRank;
 
 import java.util.Scanner;
 
 class indata {
+    Scanner sc = new Scanner(System.in);
     String name;
     int num, num1, copy;
     String[] nam = new String[3];
     int value[] = new int[3];
 
-    void in() {
+    void input() {
         for (int m = 0; m < 3; m++) {
-            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter String: ");
             name = sc.next();
             nam[m] = name;
-
-            int j = 0;
+            System.out.println("Enter Number: ");
             num = sc.nextInt();
             num1 = num;
             value[m] = num;
         }
+        sc.close();
     }
 
     // void showArray() {
@@ -63,10 +65,10 @@ class indata {
     }
 }
 
-public class hacker {
+public class HackerRankPrecedingZero {
     public static void main(String[] args) {
         indata h = new indata();
-        h.in();
+        h.input();
         // h.showArray();
         h.solveProblem();
         System.out.println("================================");

@@ -1,3 +1,5 @@
+package DSA.Stack;
+
 import java.util.Scanner;
 
 class stack_implementation extends Functions {

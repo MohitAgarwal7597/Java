@@ -1,9 +1,10 @@
 package DSA.BinarySearch;
 
+// Problem. Return next greatest letter than given target if target dosen't exits in array return first letter of the array and for last element too.
 public class CeilingNumberLeetCode {
     public static void main(String[] args) {
         char[] arr = { 'a', 'c', 'f', 'h', 'k', 'o', 'r', 'u', 'x', 'y' };
-        char target = 'z';
+        char target = 'h';
         char ans = nextGreatestLetter(arr, target);
         System.out.println(ans);
 

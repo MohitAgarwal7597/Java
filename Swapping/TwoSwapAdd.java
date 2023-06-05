@@ -9,6 +9,7 @@ public class TwoSwapAdd {
         int a = sc.nextInt();
         System.out.print("b = ");
         int b = sc.nextInt();
+        sc.close();
         b = a * b;
         a = b / a;
         b = b / a;

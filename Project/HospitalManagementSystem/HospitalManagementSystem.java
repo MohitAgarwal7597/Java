@@ -35,10 +35,10 @@ class HospitalManagementSystem implements HospitalInterface {
 
     @Override
     public void fixAppointment() {
-        String title = "Taking Appointment With Doctor.";
+        String title = " Taking Appointment With Doctor.";
         p.setPatientDetails();
-        System.out.println("Appoinment Fixed Sucessfully...");
-        System.out.println("Come Tommorow At 9 AM For Checkup!!");
+        System.out.println("Your Application Is Submitted. Our Authority Will Confirm It Shortly...");
+        // System.out.println("Come Tommorow At 9 AM For Checkup!!");
         receipt(title);
     }
 
@@ -61,7 +61,8 @@ class HospitalManagementSystem implements HospitalInterface {
         switch (choice) {
             case 1: {
                 p.setPatientDetails();
-                System.out.println("Your Full Body Checkup Appoinment Fixed Sucessfully.");
+                System.out.println("Your Application Is Submitted. Our Authority Will Confirm It Shortly...");
+                // System.out.println("Your Full Body Checkup Appoinment Fixed Sucessfully.");
                 receipt(title);
                 System.out.println("Come Day After Tommorow Take Your Report.");
                 System.out.println("Thank You!!");
@@ -70,7 +71,8 @@ class HospitalManagementSystem implements HospitalInterface {
             }
             case 2: {
                 p.setPatientDetails();
-                System.out.println("Your Blood Test Appoinment Fixed Sucessfully.");
+                System.out.println("Your Application Is Submitted. Our Authority Will Confirm It Shortly...");
+                // System.out.println("Your Blood Test Appoinment Fixed Sucessfully.");
                 receipt(title);
                 System.out.println("Thank you!!");
                 System.out.println("------------------------------------------------------------");
@@ -78,7 +80,8 @@ class HospitalManagementSystem implements HospitalInterface {
             }
             case 3: {
                 p.setPatientDetails();
-                System.out.println("Your CT Scan Appoinment Fixed Sucessfully.");
+                System.out.println("Your Application Is Submitted. Our Authority Will Confirm It Shortly...");
+                // System.out.println("Your CT Scan Appoinment Fixed Sucessfully.");
                 receipt(title);
                 System.out.println("Thank you!!");
                 System.out.println("------------------------------------------------------------");
@@ -94,7 +97,8 @@ class HospitalManagementSystem implements HospitalInterface {
                     case 1: {
                         p.setPatientDetails();
                         System.out.println("------------------------------------------------------------");
-                        System.out.println("Your Appointment For X-Ray Scan is Fixed Sucessfully..");
+                        System.out.println("Your Application Is Submitted. Our Authority Will Confirm It Shortly...");
+                        // System.out.println("Your Appointment For X-Ray Scan is Fixed Sucessfully..");
                         receipt(title);
 
                         System.out.println("Thank you!!");
@@ -103,7 +107,8 @@ class HospitalManagementSystem implements HospitalInterface {
                     }
                     case 2: {
                         p.setPatientDetails();
-                        System.out.println("Your Appointment For Sonography is Fixed Sucessfully..");
+                        System.out.println("Your Application Is Submitted. Our Authority Will Confirm It Shortly...");
+                        // System.out.println("Your Appointment For Sonography is Fixed Sucessfully..");
                         receipt(title);
 
                         System.out.println("Thank you!!");
@@ -115,7 +120,8 @@ class HospitalManagementSystem implements HospitalInterface {
             }
             case 5: {
                 p.setPatientDetails();
-                System.out.println("Your Appointment For Urine Test is Fixed Sucessfully..");
+                System.out.println("Your Application Is Submitted. Our Authority Will Confirm It Shortly...");
+                // System.out.println("Your Appointment For Urine Test is Fixed Sucessfully..");
                 receipt(title);
                 System.out.println("Thank you!!");
                 System.out.println("------------------------------------------------------------");
@@ -132,7 +138,7 @@ class HospitalManagementSystem implements HospitalInterface {
         System.out.println("--> Contact Support:-\n--> +91-7375-XXX-573");
         System.out.println("--> +91-7878-XXX-878");
         System.out.println(
-                "--> For Ambulance Support Call: 108/+91- 9828-XXX-123\n--> Press 3 For Ambulance or Press Other Key For Home Page");
+                "--> For Ambulance Support Call: 108/+91- 9828-XXX-123\n--> Press 3 For Ambulance or Press Other Key For Exit Page");
         System.out.println("-------------------------------------------------------------");
         try {
             int ambulance = sc.nextInt();
@@ -144,10 +150,10 @@ class HospitalManagementSystem implements HospitalInterface {
                 System.out.println("Ambulance Arriving At " + Address);
                 System.out.println("-------------------------------------------------------------");
             } else {
-                System.out.println("Back To Home Page");
+                System.out.println("Back To Exit Page");
             }
         } catch (Exception e) {
-            System.out.println("Back To Home Page");
+            System.out.println("Back To Exit Page");
             System.out.println("-------------------------------------------------------------");
         }
 
