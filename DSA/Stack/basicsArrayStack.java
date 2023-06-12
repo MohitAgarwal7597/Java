@@ -1,9 +1,17 @@
 package DSA.Stack;
 
-// import java.util.Stack;
-
-// import java.util.Stack;
-
+/*
+ * Array Stack Advantages
+ * It takes less space(1 block) than linked list(Node | 2x space)
+ * If Size is know than array can be used else linked list for unknown size.
+ * 
+ */
+/*
+ * Array Stack Disadvantages
+ * It has limited size.
+ * Better to use only when size is known or estimated
+ * 
+ */
 public class basicsArrayStack {
     public static class Stack {
         private int[] arr = new int[5];

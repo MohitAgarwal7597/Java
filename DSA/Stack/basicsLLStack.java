@@ -1,5 +1,15 @@
 package DSA.Stack;
 
+/*
+ * Array Stack Advantages
+ * Ulimited Size
+ * 
+ */
+/*
+ * Array Stack Disadvantages
+ * Use Extra Memory Than Array
+ * Takes Space Complexity O(n) of call Stack to print elements of Stack.
+ */
 public class basicsLLStack {
     public static class Node {
         private int val;
