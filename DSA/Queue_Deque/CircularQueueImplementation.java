@@ -1,4 +1,4 @@
-package DSA.Queue;
+package DSA.Queue_Deque;
 
 public class CircularQueueImplementation {
     // Circular Queue using array
@@ -92,12 +92,19 @@ public class CircularQueueImplementation {
         q.add(5);
         q.add(10);
         q.add(9);
-        q.add(3);
         q.remove();
+        q.remove();
+        q.remove();
+        q.display();
+        System.out.println(q.size());
+        q.remove();
+        q.add(3);
         q.add(-1);
+        q.add(5);
+        System.out.println("Size is " + q.size());
         q.display();
         System.out.println(q.isEmpty());
-        q.remove();
+        // q.remove();
         System.out.println(q.peek());
         System.out.println(q.isFull());
         // q.isEmpty();

@@ -1,7 +1,6 @@
-package DSA.Queue;
+package DSA.Queue_Deque;
 
-import javax.swing.text.html.HTMLDocument.RunElement;
-
+// Queue implementation using array
 public class ArrayQueue {
 
     public static class Queue {

@@ -1,7 +1,7 @@
-package DSA.Queue;
+package DSA.Queue_Deque;
 
-// Queue implementation using linked list (easist Way to of implementatioin queue)
-class LLQueue {
+public class LLCircularQueue {
+    // Only Difference in this and LLCircularQueue is tail.next == head. thats it.
     static class Queue {
         Node head = null;
         Node tail = null;
@@ -20,11 +20,13 @@ class LLQueue {
             if (head == null) {
                 Node n = new Node(val);
                 head = tail = n;
+                tail.next = head;
                 return;
             }
             Node n = new Node(val);
             tail.next = n;
             tail = n;
+            tail.next = head;// circular
             size++;
         }
 
@@ -35,16 +37,18 @@ class LLQueue {
             }
             int x = head.val;
             head = head.next;
+            tail.next = head;// tail.next need to update othewise it will be pointing to deleted head node.
             size--;
             return x;
         }
 
         void display() {
             Node temp = head;
-            while (temp != null) {
+            while (temp.next != head) {
                 System.out.print(temp.val + " ");
                 temp = temp.next;
             }
+            System.out.print(temp.val);
             System.out.println();
         }
 
@@ -62,14 +66,22 @@ class LLQueue {
          * boolean isFull(); is method ka koi mtlb nhi q ki linked list mai memory limit
          * nhi h toh vo full nhi hogi
          */
-        int peek() {
+        int peek() throws Exception {
+            if (head == null) {
+                System.out.println("Queue is Empty");
+                return -1;
+            }
+            // if (head == null) {
+            // throw new Exception("Queue is Empty!");
+            // }
             return head.val;
         }
 
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Queue q = new Queue();
+        System.out.println(q.peek());
         q.add(5);
         q.add(3);
         q.add(6);

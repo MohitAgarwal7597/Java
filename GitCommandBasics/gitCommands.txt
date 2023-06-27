@@ -1,0 +1,18 @@
+*****To Bring New Files in Staging area{
+        1-> git add "file name"  //this will bring "file name" to Staging area.
+
+        2-> git add .            //this will bring all new files in Staging area. . (Dot) mean all files.
+}
+*****To Check if files are there in Staging area.{
+
+    git status // this will list all this files available in staging area and to be pushed yet.
+}
+*****To Commit files in Local repository{
+
+    git commit -m "any message" // this will commit files in Local repo with the given message
+}
+*****To push files in remote repository(On Github){
+
+    git push -u origin main // this will push files on remote repository. here "main" is the name of the branch you can change the name of the branch
+    Ex. git push -u origin master // Files will be pushed on master branch 
+}
