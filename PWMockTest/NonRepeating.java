@@ -1,6 +1,6 @@
 package PWMockTest;
 
-public class reapting {
+public class NonRepeating {
     public static void main(String[] args) {
         String str = "leetcode";
         System.out.println(reapting(str));

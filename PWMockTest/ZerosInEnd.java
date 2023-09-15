@@ -2,7 +2,7 @@ package PWMockTest;
 
 import java.util.Arrays;
 
-public class mock {
+public class ZerosInEnd {
     public static void main(String[] args) {
         int[] arr = { 0, 5 };
         System.out.println(Arrays.toString(arrange(arr)));
